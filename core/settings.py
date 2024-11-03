@@ -16,7 +16,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'ride'
+    'ride',
+    'channels',
+    'daphne'
 ]
 
 MIDDLEWARE = [
@@ -47,7 +49,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'core.wsgi.application'
+# WSGI_APPLICATION = 'core.wsgi.application'
+ASGI_APPLICATION = 'core.asgi.application'
 
 DB_DEBUG = True
 
